@@ -10,6 +10,29 @@ form.addEventListener('submit', (event)=>{
     validate();
 
 })
+
+const sendData=(count, successRate)=>{
+    if(count===successRate){
+        location.href="https://https://www.youtube.com/watch?v=Gku9iMSMbWg&list=PLwGdqUZWnOp1hqyT6h7pY0RlXIIGlE5U0&index=84";
+        alert("registration compelete");
+    }
+}
+
+const successInput=()=>{
+    let formCon = document.getElementsByClassName("form-control");
+    let count = formCon.length-1;
+    for(var i=0; i<formCon.length; i++)
+    {
+        
+
+        if (formCon[i].className==="form-control success") {
+            var successRate = 0 + i;
+            sendData(count, successRate);
+            
+
+        }else return false;
+    }
+}
 // more email validate
 const isEmail =(emailVal) =>{
     var atSymbol = emailVal.indexOf("@");
@@ -80,6 +103,7 @@ if(cpasswordVal===""){
 }else{
     setSuccessMsg(cpassword);
 }
+successInput();
 
 }
 
