@@ -13,8 +13,9 @@ form.addEventListener('submit', (event)=>{
 
 const sendData=(count, successRate)=>{
     if(count===successRate){
-        location.href="https://https://www.youtube.com/watch?v=Gku9iMSMbWg&list=PLwGdqUZWnOp1hqyT6h7pY0RlXIIGlE5U0&index=84";
+        // location.href="https://https://www.youtube.com/watch?v=Gku9iMSMbWg&list=PLwGdqUZWnOp1hqyT6h7pY0RlXIIGlE5U0&index=84";
         alert("registration compelete");
+        swal("Congeratulation!", "Registration Complete!", "success");
     }
 }
 
